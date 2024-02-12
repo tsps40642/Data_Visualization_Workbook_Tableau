@@ -38,6 +38,9 @@ https://help.tableau.com/current/pro/desktop/en-us/buildexamples_density.htm
 
 ## Show top 10 hosts by total reviews
 1. Drag `Host Name`, `Neighborhood Group`, `Neighborhood`, and `Price` and change aggregation as Average to Rows -> change into "Discrete"
-2. Drag `Number Of Reviews` to Columns, use SUM() aggregation
+2. Drag `Number Of Reviews` to Columns, use SUM() aggregation, use Continuous  
 3. Drag `Host Id` to "Detail" -> drop down and select Filter -> select "Top" -> select "By filed" -> Top, 10, by `Number Of Reviews` -> Apply, OK
-4. Press control and duplicate SUM(`Number Of Reviews`) to Label 
+4. Press control and duplicate SUM(`Number Of Reviews`) to Label
+5. I want to sort the whole table by SUM(`Number Of Reviews`): drag `Number Of Reviews` to Rows, use SUM() aggregation, use Discrete -> place it in the first position so that it will have sorting priority  
+
+## 
