@@ -37,4 +37,7 @@ https://help.tableau.com/current/pro/desktop/en-us/buildexamples_density.htm
 6. Drop everything in the second pie -> decrese size a little bit and set Color white -> drop down the second SUM(0) and select "Dual Axis" to combine two pies    
 
 ## Show top 10 hosts by total reviews
-1. 
+1. Drag `Host Name`, `Neighborhood Group`, `Neighborhood`, and `Price` and change aggregation as Average to Rows -> change into "Discrete"
+2. Drag `Number Of Reviews` to Columns, use SUM() aggregation
+3. Drag `Host Id` to "Detail" -> drop down and select Filter -> select "Top" -> select "By filed" -> Top, 10, by `Number Of Reviews` -> Apply, OK
+4. Press control and duplicate SUM(`Number Of Reviews`) to Label 
