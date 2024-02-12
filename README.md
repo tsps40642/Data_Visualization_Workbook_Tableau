@@ -29,4 +29,8 @@ https://help.tableau.com/current/pro/desktop/en-us/buildexamples_density.htm
 10. Go to the second barchart and remove `Neighborhood Group` from Color -> select "Line" -> press control and drag CNT(`Name`) into Label -> drop down the second CNT(`Name`) and select "Dual Axis" to combine the bar and the line  
 
 ## Create a donut chart for total `Neighborhood` in each `Neighborhood Group` 
-1. 
+1. Drag `Neighborhood Group` into Color -> select "Pie"
+2. Drag `Neighborhood` into Size -> drop down and select "Count"
+3. Press control to duplicate `Neighborhood` into Label  
+4. Press control to duplicate CNT(`Neighborhood`) into Label -> drop down to Quick Table Calculation -> select "Percent of Total"
+5. 
