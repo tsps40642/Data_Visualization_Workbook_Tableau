@@ -33,4 +33,8 @@ https://help.tableau.com/current/pro/desktop/en-us/buildexamples_density.htm
 2. Drag `Neighborhood` into Size -> drop down and select "Count"
 3. Press control to duplicate `Neighborhood` into Label  
 4. Press control to duplicate CNT(`Neighborhood`) into Label -> drop down to Quick Table Calculation -> select "Percent of Total"
-5. 
+5. Double click on Rows and enter 0 and get SUM(0) -> press control to duplicate aside
+6. Drop everything in the second pie -> decrese size a little bit and set Color white -> drop down the second SUM(0) and select "Dual Axis" to combine two pies    
+
+## Show top 10 hosts by total reviews
+1. 
