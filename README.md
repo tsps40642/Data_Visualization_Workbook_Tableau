@@ -25,4 +25,8 @@ https://help.tableau.com/current/pro/desktop/en-us/buildexamples_density.htm
 6. Drag `Room Type` into Filter -> randomly select one, Apply, OK -> drop down Filter and select "Show Filter" -> drop down option and select "Single Value (list)" to change filter type (or you can also set "Multiple Values (list)" if you want to select more than one type at a time)
 7. Edit colors: Color -> "Edit Colors" -> "Select Color Palette" -> click "Assign Palette" and OK
 8. Set the sheet title: Total bookings in months and Neighborhood Group - room type: -> drop down "Insert" and select `Room Type` -> so that when the user select a type, the title will change correspondingly
-9. 
+9. Duplicate the CNT(`Name`) in Rows: press control and drag CNT(`Name`) to duplicate aside
+10. Go to the second barchart and remove `Neighborhood Group` from Color -> select "Line" -> press control and drag CNT(`Name`) into Label -> drop down the second CNT(`Name`) and select "Dual Axis" to combine the bar and the line  
+
+## Create a donut chart for total `Neighborhood` in each `Neighborhood Group` 
+1. 
