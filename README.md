@@ -3,6 +3,11 @@
 This is a notebook for data visualization on Tableau
 Below are demonstrations for some steps using sample dataset from: https://youtu.be/47_JlqPxKjY?si=315RZyXXv4nmidq7  
 
+## Data overview
+These are some important fields we will use later:  
+1. `Neighborhood Group` is a coarser category than `Neighborhood`
+2. `Last Review` is in date form  
+
 ## Create a map for "average price" in the `Neighborhood` by `Room Type`  
 1. Place `Longtitude` in Columns and `Latitude` in Rows (or double click them respectively) -> it will show a map
 2. Drag `Neighbor` into Detail -> it will show `Neighborhood` locations on the map, with each data point having `Longtitude` and `Latitude`  
@@ -43,7 +48,7 @@ https://help.tableau.com/current/pro/desktop/en-us/buildexamples_density.htm
 4. Press control and duplicate SUM(`Number Of Reviews`) to Label
 5. I want to sort the whole table by SUM(`Number Of Reviews`): drag `Number Of Reviews` to Rows, use SUM() aggregation, use Discrete -> place it in the first position so that it will have sorting priority  
 
-## Horizontal stacked barchart for total bookings by `Room Type` and `Neighbor Group` 
+## Create a horizontal stacked barchart for "total bookings" by `Room Type` and `Neighbor Group` 
 1. Drag `Neighborhood Group` into Rows
 2. Drag `Name` into Columns -> drop down "Measure" and select "Count"
 3. Drag `Room Type` into "Colors" and edit colors if you want
@@ -51,7 +56,7 @@ https://help.tableau.com/current/pro/desktop/en-us/buildexamples_density.htm
 5. Left click field name and select "Hide Field Labels for Rows" if you want
 6. Edit the title  
 
-## Total reviews by year 
+## Create a barchart for "total reviews" by "year" 
 1. Drag `Last Review` into Columns (this field is in date form) and select "Year"  
 2. Drag `Number Of Reviews` into Rows -> select "Bar" in "Mark" section
 3. On the top change "Standard" into "Entire View" for wider visualization
@@ -59,7 +64,7 @@ https://help.tableau.com/current/pro/desktop/en-us/buildexamples_density.htm
 5. Remove null values by click on "Null" and select Exclude"
 6. Edit the title
 
-## Treemap for average price by neighborhood group and room type  
+## Create a treemap for "average price" by `Neighborhood Group` and `Room Type` 
 1. Drag `Neighborhood Group` into Rows
 2. Drag `Price` into "Text" -> drop down "Measure" and select "Average"
 3. Drag `Room Type` into "Filters" -> randomly select one, Apply, OK -> drop down Filter and select "Show Filter" -> drop down option and select "Single Value (list)" to change filter type (or other types)
@@ -68,4 +73,5 @@ https://help.tableau.com/current/pro/desktop/en-us/buildexamples_density.htm
 6. Drop down AVG(`Price`) and select "Format" -> change "Number" into "Currency(Standard)" to show average price in currency form
 7. Edit the title
 
-# Horizontal 
+## Horizontal barchart for "average price" in each `Neighborhood` by `Neighborhood Group`
+1. 
