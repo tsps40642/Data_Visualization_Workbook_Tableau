@@ -74,4 +74,70 @@ https://help.tableau.com/current/pro/desktop/en-us/buildexamples_density.htm
 7. Edit the title
 
 ## Horizontal barchart for "average price" in each `Neighborhood` by `Neighborhood Group`
+1. Drag `Neighbor` into Rows
+2. Drag `Neighbrhood` into "Filters" -> randomly select one, Apply, OK -> drop down Filter and select "Show Filter" -> drop down option and select "Single Value (list)" to change filter type (or other types)
+3. Drag `Price` into Columns -> drop down "Measure" and select "Average"
+4. Press control and duplicate AVG(`Price`) to Label
+5. Drop down AVG(`Price`) and select "Format" -> change "Number" into "Currency(Standard)" to show average price in currency form
+6. Left click field name and select "Hide Field Labels for Rows" if you want
+7. Edit the title
+
+## Create a highlight table for "average reviews per month" by `Room Type` and `Neighborhood Group` 
+1. Drag `Neighborhood Group` into Columns
+2. Drag `Room Type` into Rows
+3. Drag `Reviews Per Month` into "Text" -> drop down "Measure" and select "Average"
+4. Click "Show Me" and select highlight table -> select "Entire View" -> hied field names if you want -> edit the colors if you want
+
+## Create 4 text sheets 
+First need to create 4 calculated fields:   
+on the LHS click "Create Calculated Field" -> type "Total hosts", "Total neighborhoods in NYC", "Avg. reviews per month", "Total reviews"  
+
+### Total hosts 
+1. Drag `Total hosts` into "Text"
+2. Drag `Host Id` into "Text" -> drop down "Measure" and select "Count(Distinct)"
+
+### Total neighborhood in NYC
+1. Drag `Total neighborhoods in NYC` into "Text"
+2. Drag `Neighborhood` into "Text" -> drop down "Measure" and select "Count(Distinct)"
+
+### Average reviews per month 
+1. Drag `Avg. reviews per month` into "Text"
+2. Drag `Review Per Month` into "Text" -> drop down "Measure" and select "Average"
+
+### Total reviews
+1. Drag `Total reviews` into "Text"
+2. Drag `Number Of Reviews` into "Text" -> drop down "Measure" and select "Sum"
+
+## Format the worksheets 
+### Sheet 1  
+1. On the top click "Format" -> "Shading" -> change the color for "Worksheet" if you want 
+2. Edit the color of title if you want -> right click and select "Format Title" -> change the color of "Border" if you want
+
+### Sheet 2
+1. Edit grid line and font if you want
+2. Double click the y-axis to edit is name
+3. Right click x-axis and select "Format" -> in "Dates" select "Abbreviation"
+4. Edit border of the chart if you want
+5. Right click the title and select "Format Title" -> edit border if you want
+6. Hide field name of Columns if you want
+7. Edit the filter format if you want
+
+### Sheet 3
+1. Double click the y-axis and delete its name (since we don't need) -> then "Tick Marks" select "None", and do the same things for another y-axis
+2. In "Format" remove "Zero Lines" and edit other lines if you want
+3. "Hide card" for CNT(`Neighborhood`)
+
+### Sheet 4 
+1. Edit the grid line if you want
+2. Delete the title for barchart since we already have that in the first column
+3. Drop donw and select "Format" in AVG(Price) in Rows to edit the format of number 
+
+### Sheet 5 
+Hide the title of x-axis since we don't need (can be inferred from the title)
+
+### Sheet 6-13
+Similar actions for these sheets  
+
+## Create a dashboard
 1. 
+
