@@ -139,5 +139,10 @@ Hide the title of x-axis since we don't need (can be inferred from the title)
 Similar actions for these sheets  
 
 ## Create a dashboard
-1. 
+1. Define the size: (1900 x 1000)px
+2. On the top click "Dashboard", select "Format" -> edit the color as sheets
+3. Drag sheets into the dashboard, can change into "Standard" or "Fit Height" rather than "Entire View" if needed 
+4. Edit the filter format into "Dropdown" if needed
+5. Dropdown the filter into "floating" so that we can move it to the chart it indicates
+6. Add company logo: 
 
